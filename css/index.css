@@ -81,16 +81,26 @@ h1, h2, h3, h4, h5 {
 		justify-content: space-between;
 		margin:15px;
 		text-decoration: none;
-		color: gray;
-	
+        color: gray;
+        
+
+    }
+    
+    nav a:hover {
+        background: white;
+        color: pink;
+      }
 
 
-	}
+
 	.logobox{
 		
 		display: flex;
 
-	}
+    }
+    
+
+
 	.container2{
 		
 		display:flex;
@@ -115,14 +125,7 @@ h1, h2, h3, h4, h5 {
 
 
 
-	.headerimg{
-		
-		margin:20px;
-		justify-items: flex-end;
-		align-items: flex-end;
-		
 
-	}
 	.container3{
 		
 		justify-content: space-between;
@@ -176,32 +179,68 @@ h1, h2, h3, h4, h5 {
 			text-align: center;
 
         }
-        .container1{
-            width:800px;
-            margin:0 auto;
-            border: 1px solid ;
-            padding: 20px;
-        }
-	
-@media(max-width:500px){
+     .utf-8{
+         width:800px;
+     }
+
+@media (max-width:800px){
+
     .container1{
-        width: 500px;
-        background: gray;
-        justify-content: center;
+        flex-direction: column-reverse;
         align-items: center;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
     }
-}
-.container1 .logobox{
-    display: flex;
-    flex-direction: column;
-}
+    nav a{
+		
+        flex-direction: column;
+        flex-flow: column;
+        margin:200px;
+        padding: 5px;
+        
+    }
+    
+    
+        .h1h2{
+            align-items:center;
+            background-color: teal;
+    
+    }
+    h2{
+        border:2px solid black;
+    }
+    h2:hover {
+        background: white;
+        color: pink;
+      }
 
-.container1 nav{
-    display: flex;
-    flex-direction: column;
-}
+      .h3ph4p{
+		
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px 
+        padding: 10px;
+	}
 
 
-.container1 .logobox nav a{
-    margin-bottom: 20px;
-}
+    .h4p1h4p2h4p3, .h4p1  .h4p1h4p2h, .h4p2{
+		
+		flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        padding: 15px;
+    }
+    
+
+    .h5p5{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
